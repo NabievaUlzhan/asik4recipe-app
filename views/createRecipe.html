@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>YumBook</title>
+</head>
+<body>
+  <header>
+    <div class="header__content">
+      <div class="header__content-logo">
+        <img src="https://www.svgrepo.com/show/277626/chef-hat-chef.svg">
+        <p><a href="/">YumBook</a></p>
+      </div>
+
+      <div class="header__content-menu">
+        <nav>
+          <ul class="header__menu-items">
+            <li><a href="/">Home</a></li>
+            <li><a href="/api/recipes">Recipes</a></li>
+            <li><a href="/api/favourites">Favourites</a></li>
+            <li><a href="/api/createRecipe">Create Recipe</a></li>
+            <li><a href="/api/login">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="createRecipe_content">
+    <section>
+      
+      <form id="form" class="createRecipe_content-form">
+        <h2 class="home__title">Create Recipe</h2>
+
+        <input id="name" name="name" placeholder="Name" />
+
+        <input id="cuisine" name="cuisine" placeholder="cuisine" />
+
+        <select name="type" id="type">
+          <option value="Breakfast">Breakfast</option>
+          <option value="Lunch">Lunch</option>
+          <option value="Dinner">Dinner</option>
+        </select>
+
+        <input type="number" name="cookingTime" id="cookingTime" placeholder="Cooking time" />
+
+        <select name="difficulty" id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="meduim">Meduim</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <select name="category" id="category">
+          <option value="Dessert">Dessrt</option>
+          <option value="First course">First course</option>
+          <option value="Main course">Main course</option>
+          <option value="Drinks">Drinks</option>
+        </select>
+
+        <textarea id="ingredients" name="ingredients" placeholder="ingredients"></textarea>
+
+        <textarea id="instructions" name="instructions" placeholder="instructions"></textarea>
+
+        <button>Create</button>
+      </form>    
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer__content">
+      <h2 class="home__title">Get the Best Recipes Weekly</h2>
+      <p>Join 25,000+ food lovers and get hand-picked recipes, cooking tips, and seasonal collections delivered to your inbox every Tuesday.</p>
+      <button><a href="/api/login">Login</a></button> 
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/createRecipe.js"></script>
+</body>
+</html>
