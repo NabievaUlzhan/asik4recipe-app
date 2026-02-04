@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>YumBook</title>
+</head>
+<body>
+  <header>
+    <div class="header__content">
+      <div class="header__content-logo">
+        <img src="https://www.svgrepo.com/show/277626/chef-hat-chef.svg">
+        <p><a href="/">YumBook</a></p>
+      </div>
+
+      <div class="header__content-menu">
+        <nav>
+          <ul class="header__menu-items">
+            <li><a href="/">Home</a></li>
+            <li><a href="/api/recipes">Recipes</a></li>
+            <li><a href="/api/favourites">Favourites</a></li>
+            <li><a href="/api/createRecipe">Create Recipe</a></li>
+            <li><a href="/api/login">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="recipes__content">
+    <section>
+      <h2 class="home__title">Favourite Recipes</h2>
+        
+      <ul id="recipe-list"></ul>    
+    </section>
+  </main>
+  
+  
+  <footer>
+    <div class="footer__content">
+      <h2 class="home__title">Get the Best Recipes Weekly</h2>
+      <p>Join 25,000+ food lovers and get hand-picked recipes, cooking tips, and seasonal collections delivered to your inbox every Tuesday.</p>
+      <button><a href="/api/login">Login</a></button>   
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/favourites.js"></script>
+</body>
+</html>
